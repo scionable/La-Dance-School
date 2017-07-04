@@ -2,13 +2,35 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Dance school</title>
 		<link rel="stylesheet" href="css/libs.min.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="libs/swiper/dist/css/swiper.min.css">
+		
 	</head>
 <body>
 <!--HEADER START-->
 	<header class="header">
+		<div class="swiper-container">
+		    <!-- Additional required wrapper -->
+		    <div class="swiper-wrapper">
+		        <!-- Slides -->
+		        <div class="swiper-slide"><img src="img/header-bg.png" alt="header-bg"></div>
+		        <div class="swiper-slide"><img src="img/header-bg.png" alt="header-bg"></div>
+		        <div class="swiper-slide"><img src="img/header-bg.png" alt="header-bg"></div>
+		        ...
+		    </div>
+		    <!-- If we need pagination -->
+		    <!-- <div class="swiper-pagination"></div> -->
+		    
+		    <!-- If we need navigation buttons -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		    
+		    <!-- If we need scrollbar -->
+		    <!-- <div class="swiper-scrollbar"></div> -->
+		</div>
 		<div class="logo_block">
 			<img src="img/logo.png" alt="logo">
 		</div>
@@ -27,7 +49,39 @@
 				<li><a href="#!">Афиша</a></li>
 			</ul>
 		</div>
+		<div class="button_sing_up">
+			<p>Запишись на бесплатный урок</p>
+			<form action="">
+				<input type="button" value="Записаться" class="button-white">
+			</form>		
+		</div>		
 	</header>
+	<section class="body">
+		<h3 class="h2">Отзывы наших учеников</h3>
+		<div class="block_response main_container">
+			<div class="response">
+				<img src="img/response1.png" alt="response1">
+				<span>Даша Байбак</span>
+				<p class="discription">Сегодня, ровно год как я пришла в LOS ANGELES DANCE SCHOOL. Я до сих пор помню первую свою тренировку у Марии Сергеевны, это было очень круто</p>
+			</div>
+			<div class="response">
+				<img src="img/response2.png" alt="response2">
+				<span class="name_response">Даша Байбак</span>
+				<p class="discription">Сегодня, ровно год как я пришла в LOS ANGELES DANCE SCHOOL. Я до сих пор помню первую свою тренировку у Марии Сергеевны, это было очень круто,это было очень круто, это было очень круто</p>
+			</div>
+		</div>
+		<a href="#" class="more_response">
+			<input type="text" class="button-red" value="Больше отзывов">
+		</a>
+		<div class="about_as">
+			<div>
+				<span>о нас</span>
+				<input type="button">
+			</div>
+		</div>
+		
+
+	</section>
 <!--HEADER END-->
 
 	
@@ -53,7 +107,7 @@
 	
 	
 	
-	
+	<script type="text/javascript" src="libs/swiper/dist/js/swiper.min.js"></script> 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>

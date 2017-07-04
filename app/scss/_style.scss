@@ -1,0 +1,181 @@
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('../fonts/OpenSans-Bold.eot');
+	src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Bold.woff') format('woff'),
+		url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url('../fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Light.woff') format('woff'),
+		url('../fonts/OpenSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'System';
+	src: url('../fonts/System.eot');
+	src: url('../fonts/System.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/System.woff') format('woff'),
+		url('../fonts/System.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr-Italic';
+	src: url('../fonts/HelveticaNeueCyr-Italic.eot');
+	src: url('../fonts/HelveticaNeueCyr-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Italic.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Italic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr-Roman';
+	src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+	src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro-Bold';
+	src: url('../fonts/MyriadPro-Bold.eot');
+	src: url('../fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Bold.woff') format('woff'),
+		url('../fonts/MyriadPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro-It';
+	src: url('../fonts/MyriadPro-It.eot');
+	src: url('../fonts/MyriadPro-It.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-It.woff') format('woff'),
+		url('../fonts/MyriadPro-It.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'HelveticaNeueCyr-Roman';
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+                                            //-----COLORS------
+$color-white:#fff;
+$color-black:#000;
+$color-light-grey:rgba(205, 202, 202, 0.3); //#cdcaca;
+$color-gray:#505050;
+$color-red:#f7062e;
+$color-blue:#050545;
+
+											//-------FONTS-------
+
+$fonts-OpenSans-Bold:'OpenSans-Bold';
+$fonts-OpenSans-Light :'OpenSans-Light';
+$fonts-System:'System';
+$fonts-HelveticaNeueCyr-Italic:'HelveticaNeueCyr-Italic';
+$fonts-HelveticaNeueCyr-Roman:'HelveticaNeueCyr-Roman';
+$fonts-MyriadPro-Bold:'MyriadPro-Bold';
+$fonts-MyriadPro-It:'MyriadPro-It';
+											 //----WHITE BUTTON----
+
+.button-white{                               
+	padding:0;
+	margin: 0;
+	border: 3px solid $color-white;
+	background: transparent;
+	text-transform: uppercase;
+	font-size: 33px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 0;
+	width: 282px;
+	color:$color-white;
+	outline: none;
+	&:hover{
+		border: 3px solid $color-red;
+		color:$color-red;
+		cursor:pointer;
+	}
+} 
+.button-red{                                  //---RED BUTTON-------
+	margin: 0;
+	padding: 13px 0;
+	font-size: 27px;
+	background: $color-red;
+	color: $color-white;
+	outline: none;
+	text-align: center;
+	border:none;
+	&:hover{
+		background:$color-blue; 
+		cursor: pointer;
+	}
+}
+.main_container{
+	max-width: 1334px;
+	margin: 0 auto;
+	text-align: center;
+}
+.h2{
+	font-size: 36px;
+	color:$color-black;
+	text-transform: uppercase;
+	text-align: center;
+
+}
