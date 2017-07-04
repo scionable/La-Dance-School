@@ -7,7 +7,6 @@
 		pagination: '.swiper-pagination',
 		paginationClickable: true,
 	    speed: 300,
-	    spaceBetween: 100,
 	    autoplay:5000,
 	    auto:4000,
 	    nextButton: '.swiper-button-next',
