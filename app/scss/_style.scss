@@ -115,13 +115,39 @@ table {
 }
 
 
+//------------------------------------------------HELPERS
+* {
+	box-sizing: border-box;
+
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	width: 100%;
+	clear: both;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+//------------------------------------------------/HELPERS
+
+
                                             //-----COLORS------
 $color-white:#fff;
 $color-black:#000;
-$color-light-grey:rgba(205, 202, 202, 0.3); //#cdcaca;
+$color-light-grey:rgba(205, 202, 202, 0.3); //#cdcaca; 
+$color-b7-grey:#b7b7b7; 
 $color-gray:#505050;
 $color-red:#f7062e;
 $color-blue:#050545;
+$color-blue-294:#294a77;
+$color-blue-335:#335c95;
+$color-blue-5e6:#5e62c2;
+$color-blue-486:#486da0;
+$color-broun:#322e2c;
 
 											//-------FONTS-------
 
@@ -155,7 +181,7 @@ $fonts-MyriadPro-It:'MyriadPro-It';
 } 
 .button-red{                                  //---RED BUTTON-------
 	margin: 0;
-	padding: 13px 0;
+	padding: 13px 20px;
 	font-size: 27px;
 	background: $color-red;
 	color: $color-white;
@@ -172,7 +198,7 @@ $fonts-MyriadPro-It:'MyriadPro-It';
 	margin: 0 auto;
 	text-align: center;
 }
-.h2{
+.title{
 	font-size: 36px;
 	color:$color-black;
 	text-transform: uppercase;
