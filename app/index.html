@@ -35,6 +35,11 @@
 			<img src="img/logo.png" alt="logo">
 		</div>
 		<div class="menu_wrapper">
+            <div class="hamburger" id="hamburger-1">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
 			<ul class="top_menu">
 				<li><a href="#!">Новости</a></li>
 				<li><a href="#!">Расписание</a></li>
@@ -80,334 +85,350 @@
 						<p class="info__day-container--p">сегодня Пн 24 июля</p>
 					</div>
 				</div>
-				<div class="info__week">
-					<input type="radio" name="radio" class="info__week--myradio" id="radio1" />
-					<label for="radio1" >Понедельник</label>
+				<div id="block-radio">
+					<ul class="info__week">
+						<li class="info__week-li">
+							<input type="radio" name="radio" class="info__week-li--myradio" id="radio1" />
+							<label for="radio1" class="info__week-li--label">Понедельник</label>
+							<div class="info__week-li-check"></div>
 
-					<input type="radio" name="radio" class="info__week--myradio" id="radio2" />
-					<label for="radio2" >Вторник</label>
+						</li>
+						<li class="info__week-li">
+							<input type="radio" name="radio" class="info__week-li--myradio" id="radio2" />
+							<label for="radio2" class="info__week-li--label" >Вторник</label>
+							<div class="info__week-li-check"></div>
+						</li>
+						<li class="info__week-li">
+							<input type="radio" name="radio" class="info__week-li--myradio" id="radio3" />
+							<label for="radio3" class="info__week-li--label" >Среда</label>
+							<div class="info__week-li-check"></div>
+						</li>
+						<li class="info__week-li">
+							<input type="radio" name="radio" class="info__week-li--myradio" id="radio4" />
+							<label for="radio4" class="info__week-li--label" >Четверг</label>
+							<div class="info__week-li-check"></div>
+						</li>
+						<li class="info__week-li">
+							<input type="radio" name="radio" class="info__week-li--myradio" id="radio5" />
+							<label for="radio5" class="info__week-li--label">Пятница</label>
+							<div class="info__week-li-check"></div>
+						</li>
 
-					<input type="radio" name="radio" class="info__week--myradio" id="radio3" />
-					<label for="radio3" >Среда</label>
-
-					<input type="radio" name="radio" class="info__week--myradio" id="radio4" />
-					<label for="radio4" >Четверг</label>
-
-					<input type="radio" name="radio" class="info__week--myradio" id="radio5" />
-					<label for="radio5" class="info__week--label">Пятница</label>
+					</ul>
+					<div class="info-tb">
+						<table class="info-tb__table">
+							<thead class="info-tb__table-head">
+							<tr>
+								<td class="info-tb__table-head--time"> время</td>
+								<td class="info-tb__table-head--form"> стиль</td>
+								<td class="info-tb__table-head--name"> хореограф</td>
+								<td class="info-tb__table-head--level"> уровень</td>
+								<td class="info-tb__table-head--number"> зал</td>
+							</tr>
+							</thead>
+							<tbody class="info-tb__table-body">
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">16:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">1</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:00 </td>
+								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:30 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
+								<td class="info-tb__table-body-tr--level">все уровни</td>
+								<td class="info-tb__table-body-tr--number">3</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">5</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Артем Комар</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">4</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">19:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">20:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="info-tb__table">
+							<thead class="info-tb__table-head">
+							<tr>
+								<td class="info-tb__table-head--time"> время</td>
+								<td class="info-tb__table-head--form"> стиль</td>
+								<td class="info-tb__table-head--name"> хореограф</td>
+								<td class="info-tb__table-head--level"> уровень</td>
+								<td class="info-tb__table-head--number"> зал</td>
+							</tr>
+							</thead>
+							<tbody class="info-tb__table-body">
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">16:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">1</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:00 </td>
+								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:30 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
+								<td class="info-tb__table-body-tr--level">все уровни</td>
+								<td class="info-tb__table-body-tr--number">3</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">5</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Артем Комар</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">4</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">19:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">20:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="info-tb__table">
+							<thead class="info-tb__table-head">
+							<tr>
+								<td class="info-tb__table-head--time"> время</td>
+								<td class="info-tb__table-head--form"> стиль</td>
+								<td class="info-tb__table-head--name"> хореограф</td>
+								<td class="info-tb__table-head--level"> уровень</td>
+								<td class="info-tb__table-head--number"> зал</td>
+							</tr>
+							</thead>
+							<tbody class="info-tb__table-body">
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">16:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">1</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:00 </td>
+								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:30 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
+								<td class="info-tb__table-body-tr--level">все уровни</td>
+								<td class="info-tb__table-body-tr--number">3</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">5</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Артем Комар</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">4</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">19:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">20:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="info-tb__table">
+							<thead class="info-tb__table-head">
+							<tr>
+								<td class="info-tb__table-head--time"> время</td>
+								<td class="info-tb__table-head--form"> стиль</td>
+								<td class="info-tb__table-head--name"> хореограф</td>
+								<td class="info-tb__table-head--level"> уровень</td>
+								<td class="info-tb__table-head--number"> зал</td>
+							</tr>
+							</thead>
+							<tbody class="info-tb__table-body">
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">16:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">1</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:00 </td>
+								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:30 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
+								<td class="info-tb__table-body-tr--level">все уровни</td>
+								<td class="info-tb__table-body-tr--number">3</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">5</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Артем Комар</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">4</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">19:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">20:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="info-tb__table">
+							<thead class="info-tb__table-head">
+							<tr>
+								<td class="info-tb__table-head--time"> время</td>
+								<td class="info-tb__table-head--form"> стиль</td>
+								<td class="info-tb__table-head--name"> хореограф</td>
+								<td class="info-tb__table-head--level"> уровень</td>
+								<td class="info-tb__table-head--number"> зал</td>
+							</tr>
+							</thead>
+							<tbody class="info-tb__table-body">
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">16:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">1</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:00 </td>
+								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">17:30 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
+								<td class="info-tb__table-body-tr--level">все уровни</td>
+								<td class="info-tb__table-body-tr--number">3</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">5</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">18:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Артем Комар</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">4</td>
+							</tr>
+							<tr>
+								<td class="info-tb__table-body-tr--time">19:00 </td>
+								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							<tr class="info-tb__table-body-tr">
+								<td class="info-tb__table-body-tr--time">20:00 </td>
+								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
+								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
+								<td class="info-tb__table-body-tr--level">начальный</td>
+								<td class="info-tb__table-body-tr--number">2</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<div class="info-tb">
-					<table class="info-tb__table">
-						<thead class="info-tb__table-head">
-							<tr>
-								<td class="info-tb__table-head--time"> время</td>
-								<td class="info-tb__table-head--form"> стиль</td>
-								<td class="info-tb__table-head--name"> хореограф</td>
-								<td class="info-tb__table-head--level"> уровень</td>
-								<td class="info-tb__table-head--number"> зал</td>
-							</tr>
-						</thead>
-						<tbody class="info-tb__table-body">
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">16:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">1</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:00 </td>
-								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:30 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
-								<td class="info-tb__table-body-tr--level">все уровни</td>
-								<td class="info-tb__table-body-tr--number">3</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">5</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Артем Комар</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">4</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">19:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">20:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-						</tbody>
-					</table>
-					<!-- <table class="info-tb__table">
-						<thead class="info-tb__table-head">
-							<tr>
-								<td class="info-tb__table-head--time"> время</td>
-								<td class="info-tb__table-head--form"> стиль</td>
-								<td class="info-tb__table-head--name"> хореограф</td>
-								<td class="info-tb__table-head--level"> уровень</td>
-								<td class="info-tb__table-head--number"> зал</td>
-							</tr>
-						</thead>
-						<tbody class="info-tb__table-body">
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">16:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">1</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:00 </td>
-								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:30 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
-								<td class="info-tb__table-body-tr--level">все уровни</td>
-								<td class="info-tb__table-body-tr--number">3</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">5</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Артем Комар</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">4</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">19:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">20:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="info-tb__table">
-						<thead class="info-tb__table-head">
-							<tr>
-								<td class="info-tb__table-head--time"> время</td>
-								<td class="info-tb__table-head--form"> стиль</td>
-								<td class="info-tb__table-head--name"> хореограф</td>
-								<td class="info-tb__table-head--level"> уровень</td>
-								<td class="info-tb__table-head--number"> зал</td>
-							</tr>
-						</thead>
-						<tbody class="info-tb__table-body">
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">16:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">1</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:00 </td>
-								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:30 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
-								<td class="info-tb__table-body-tr--level">все уровни</td>
-								<td class="info-tb__table-body-tr--number">3</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">5</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Артем Комар</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">4</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">19:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">20:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="info-tb__table">
-						<thead class="info-tb__table-head">
-							<tr>
-								<td class="info-tb__table-head--time">время</td>
-								<td class="info-tb__table-head--form"> стиль</td>
-								<td class="info-tb__table-head--name"> хореограф</td>
-								<td class="info-tb__table-head--level"> уровень</td>
-								<td class="info-tb__table-head--number"> зал</td>
-							</tr>
-						</thead>
-						<tbody class="info-tb__table-body">
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">16:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">1</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:00 </td>
-								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:30 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
-								<td class="info-tb__table-body-tr--level">все уровни</td>
-								<td class="info-tb__table-body-tr--number">3</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">5</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Артем Комар</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">4</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">19:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">20:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="info-tb__table">
-						<thead class="info-tb__table-head">
-							<tr>
-								<td class="info-tb__table-head--time"> время</td>
-								<td class="info-tb__table-head--form"> стиль</td>
-								<td class="info-tb__table-head--name"> хореограф</td>
-								<td class="info-tb__table-head--level"> уровень</td>
-								<td class="info-tb__table-head--number"> зал</td>
-							</tr>
-						</thead>
-						<tbody class="info-tb__table-body">
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">16:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Комар Вероника</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">1</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:00 </td>
-								<td class="info-tb__table-body-tr--form">jazz-funk <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Скрипка Валера </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">17:30 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Чернова Юлия</td>
-								<td class="info-tb__table-body-tr--level">все уровни</td>
-								<td class="info-tb__table-body-tr--number">3</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">stretching <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Петрович Дима</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">5</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">18:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Артем Комар</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">4</td>
-							</tr>
-							<tr>
-								<td class="info-tb__table-body-tr--time">19:00 </td>
-								<td class="info-tb__table-body-tr--form">krump choreography <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Вероника   Скрипка </td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-							<tr class="info-tb__table-body-tr">
-								<td class="info-tb__table-body-tr--time">20:00 </td>
-								<td class="info-tb__table-body-tr--form">hip-hop <span>набор</span> </td>
-								<td class="info-tb__table-body-tr--name">Валера Чернова</td>
-								<td class="info-tb__table-body-tr--level">начальный</td>
-								<td class="info-tb__table-body-tr--number">2</td>
-							</tr>
-						</tbody>
-					</table>	 -->
-				</div>
+
 				<div class="info__block">
 					<div class="info__block-btn">
 						<button class="info__block-btn--btn button-red">Больше отзывов</button>
@@ -472,5 +493,6 @@
 	<script type="text/javascript" src="libs/swiper/dist/js/swiper.min.js"></script> 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/js.js"></script>
 </body>
 </html>
