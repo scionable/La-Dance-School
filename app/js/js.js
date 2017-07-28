@@ -6,16 +6,28 @@ var blockInfo   = document.querySelector('.info__week'),
     table       = document.querySelectorAll('.info-tb__table'),
     label       = blockInfo.querySelectorAll('.info__week-li-check');
 
+
+
     for (let i = 0; i < input.length; i++ ){
-        console.log('input',input[i].checked);
-        function click (event) {
-            var target = event.target || event && event.srcElement;
-            console.log('target',target);
-        }
+	    input[i].addEventListener('click', function(){
+		    if(input[i].checked){
+			    console.log(input[i]);
+		    }
+        });
+
+
+
+
+
+        //
+        // function click (event) {
+        //     var target = event.target || event && event.srcElement;
+        //     console.log('target',target);
+        // }
 
     }
 
-        blockInfo.addEventListener('click',click);
+        // blockInfo.addEventListener('click',click);
 
 
       /*  if(label[0]){

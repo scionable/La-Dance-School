@@ -85,6 +85,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
+  content: '';
   content: none; }
 
 table {
@@ -148,34 +149,6 @@ table {
   color: #000;
   text-transform: uppercase;
   text-align: center; }
-
-.hamburger .line {
-  width: 50px;
-  height: 5px;
-  background-color: #ecf0f1;
-  display: block;
-  margin: 8px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
-.hamburger:hover {
-  cursor: pointer; }
-
-.hamburger.is-active .line:nth-child(2) {
-  opacity: 0; }
-
-.hamburger.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(13px) rotate(45deg);
-  -ms-transform: translateY(13px) rotate(45deg);
-  transform: translateY(13px) rotate(45deg); }
-
-.hamburger.is-active .line:nth-child(3) {
-  -webkit-transform: translateY(-13px) rotate(-45deg);
-  -ms-transform: translateY(-13px) rotate(-45deg);
-  transform: translateY(-13px) rotate(-45deg); }
-
-.open {
-  display: block !important; }
 
 body {
   /* font-family: 'Roboto', sans-serif; */
